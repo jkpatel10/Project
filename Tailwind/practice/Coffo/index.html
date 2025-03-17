@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffo Shop</title>
+   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+ <div class="bg-[url(img/102.png)] h-200 bg-[#f8f9fb] bg-cover">
+<nav class="border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5">
+    <img src="/img/101.png" class="h-13" alt="">
+      <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+        <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <div class="relative inline-block">
+              <input type="checkbox" id="dropdownToggle" class="peer hidden" />
+              <label for="dropdownToggle" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#d74545] md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent cursor-pointer">
+                Home
+                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg>
+              </label>
+              <div class="absolute z-10 hidden peer-checked:block font-normal divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400">
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Coffee House</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Coffee Bar</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 text-[#d74545]">Coffee Shop</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Coffee Palace</a></li>
+                </ul>
+              </div>
+            </div>            
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md: hover:text-[#d74545] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About Us</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#d74545] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Our Team</a>
+          </li>
+          <li>
+            <div class="relative inline-block">
+              <input type="checkbox" id="dropdownToggle2" class="peer hidden" />
+              <label for="dropdownToggle2" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#d74545] md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent cursor-pointer">
+                Shop
+                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg>
+              </label>
+              <div class="absolute z-10 hidden peer-checked:block font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400">
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Products</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Cart</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Checkout</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">My account</a></li>
+                </ul>
+              </div>
+            </div>            
+          </li>
+          <li>
+            <div class="relative inline-block">
+              <input type="checkbox" id="dropdownToggle3" class="peer hidden" />
+              <label for="dropdownToggle3" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#d74545] md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent cursor-pointer">
+                Blog
+                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg>
+              </label>
+              <div class="absolute z-10 hidden peer-checked:block font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400">
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blog One Column</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blog One Column With Sidebar</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blog Two Column</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blog Two Column With Sidebar</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blog Three Column</a></li>
+                </ul>
+              </div>
+            </div>            
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#d74545] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="flex justify-evenly items-center text-[#2b241d]">
+    <div>
+      <img src="/img/shape.png" alt="">
+      <h4 class="max xl:text-7xl text-3xl font-semibold">We love good <br>coffee</h4>
+      <p class="py-10 max xl:text-lg">There are people who can't start their day without having a <br>freshly brewed cup of coffee and we understand them.</p>
+      <button class="transition duration-700 hover:bg-[#2b241d] bg-[#d74545] h-13 w-40 text-white">ORDER NOW</button>
+    </div>
+    <div class="bg-[url(img/103.png)] h-170 bg-contain bg-no-repeat mt-7">
+      <img src="/img/104.png" class="h-110 mt-40" alt="">
+    </div>
+  </div>
+ </div>
+
+ <div class="flex flex-wrap justify-between items-center max xl:h-180">
+  <img src="/img/105.png" class="h-170 hidden max xl:block" alt="">
+  <div class="bg-[url(img/107.png)] bg-contain h-140 mt-10 bg-no-repeat">
+    <img src="/img/108.png" class="h-120 max xl:mx-30" alt="">
+  </div>
+  <div>
+    <img src="/img/shape.png" alt="">
+    <h4 class="text-6xl font-semibold">About our coffee</h4>
+    <p class="py-10 text-lg">Our coffee bar uses only Ethiopian coffee. All <br>commercially produced coffee originates from Ethiopia. <br>We love Ethiopia for providing the world with coffee to <br>grow, and we continue to love the flavor of that country's <br>coffee. The fruity acidity of this single origin coffee is <br>balanced by its sweet honey notes, creating soft, light <br>notes with a light character.</p>
+    <button class="transition duration-700 hover:text-[#2b241d] text-[#d74545]">LEARN MORE</button>
+  </div>
+  <img src="/img/106.png" class="h-170 hidden max xl:block" alt="">
+ </div>
+ <div class="bg-[url(img/109.png)] max 2xl:h-270 bg-cover bg-[#f8f9fb] text-center">
+  <div class="max 2xl:pt-40">
+    <img src="/img/shape.png" class="justify-self-center" alt="">
+    <h4 class="max xl:text-6xl text-2xl font-semibold">Explore our <br>coffee shop</h4>
+    <p class="py-10 max xl:text-lg">There are people who can't start their day without having a <br>freshly brewed cup of coffee and we understand them.</p>
+  </div>
+  <div class="flex flex-wrap gap-5 justify-evenly py-10">
+    <div class="rounded-sm h-100 w-80 text-center bg-white transition duration-700 hover:bg-[#FFFAFA]">
+      <img src="/img/110.png" class="h-36 justify-self-center my-8" alt="">
+      <h4 class="text-3xl font-semibold">Brewed coffee</h4>
+      <p class="py-3 text-lg">You can order our coffee in <br>the online store or find our <br>store in your city.</p>
+      <button class="transition duration-700 hover:text-[#2b241d] text-[#d74545]">EXPLORE</button>
+    </div>
+    <div class="rounded-sm h-100 w-80 text-center bg-white transition duration-700 hover:bg-[#FFFAFA]">
+      <img src="/img/111.png" class="h-36 justify-self-center my-8" alt="">
+      <h4 class="text-3xl font-semibold">Coffee beans</h4>
+      <p class="py-3 text-lg">You can order our coffee in <br>the online store or find our <br>store in your city.</p>
+      <button class="transition duration-700 hover:text-[#2b241d] text-[#d74545]">EXPLORE</button>
+    </div>
+    <div class="rounded-sm h-100 w-80 text-center bg-white transition duration-700 hover:bg-[#FFFAFA]">
+      <img src="/img/112.png" class="h-36 justify-self-center my-8" alt="">
+      <h4 class="text-3xl font-semibold">Ground coffee</h4>
+      <p class="py-3 text-lg">You can order our coffee in <br>the online store or find our <br>store in your city.</p>
+      <button class="transition duration-700 hover:text-[#2b241d] text-[#d74545]">EXPLORE</button>
+    </div>
+    <div class="rounded-sm h-100 w-80 text-center bg-white transition duration-700 hover:bg-[#FFFAFA]">
+      <img src="/img/113.png" class="h-36 justify-self-center my-8" alt="">
+      <h4 class="text-3xl font-semibold">Deserts</h4>
+      <p class="py-3 text-lg">You can order our coffee in <br>the online store or find our <br>store in your city.</p>
+      <button class="transition duration-700 hover:text-[#2b241d] text-[#d74545]">EXPLORE</button>
+    </div>
+  </div>
+ </div>
+ <div class="flex justify-between items-center max xl:h-240">
+  <img src="/img/105.png" class="h-180 hidden max xl:block" alt="">
+ <div>
+  <div class="max 2xl:pt-30 max xl:pt-70 text-center">
+    <img src="/img/shape.png" class="justify-self-center" alt="">
+    <h4 class="max xl:text-6xl text-3xl font-semibold">Our online<br>coffee shop</h4>
+    <p class="py-10 hidden max xl:block text-lg">There are people who can't start their day without having a <br>freshly brewed cup of coffee and we understand them.</p>
+    <p class="py-10 max xl:hidden">There are people who can't start their <br>day without having a freshly brewed cup <br>of coffee and we understand them.</p>
+  </div>
+  <div class="flex flex-wrap justify-evenly py-10">
+    <div class="h-100 w-90">
+      <div class="bg-[#f4f5f7] h-55 my-6 py-6 w-80">
+        <img src="/img/116.png" class="h-45 justify-self-center" alt="">
+      </div>
+      <h4 class="text-xl font-semibold">Arabica Roasted Beans</h4>
+      <p class="py-3 text-lg">$13.25</p>
+      <button class="transition duration-700 hover:bg-[#d74545] transition duration-700 hover:text-white w-80 h-10 border-1 text-sm text-[#d74545]">ADD TO CART</button>
+    </div>
+    <div class="h-100 w-90">
+      <div class="bg-[#f4f5f7] h-55 my-6 py-6 w-80">
+        <img src="/img/117.png" class="h-45 justify-self-center" alt="">
+      </div>
+      <h4 class="text-xl font-semibold">Ethiopia Roasted Beans</h4>
+      <p class="py-3 text-lg">$17.93</p>
+      <button class="transition duration-700 hover:bg-[#d74545] transition duration-700 hover:text-white w-80 h-10 border-1 text-sm text-[#d74545]">ADD TO CART</button>
+    </div>
+    <div class="h-100 w-90">
+      <div class="bg-[#f4f5f7] h-55 my-6 py-6 w-80">
+        <img src="/img/118.png" class="h-45 justify-self-center" alt="">
+      </div>
+      <h4 class="text-xl font-semibold">Kenya Light Roasted Beans</h4>
+      <p class="py-3 text-lg">$19.97 - $46.99</p>
+      <button class="transition duration-700 hover:bg-[#d74545] transition duration-700 hover:text-white w-80 h-10 border-1 text-sm text-[#d74545]">ADD TO CART</button>
+    </div>
+  </div>
+ </div>
+ <img src="/img/115.png" class="h-80 hidden max xl:block" alt="">
+ </div>
+    <div class="flex justify-between items-center max xl:h-200 bg-gray-50 text-[#2b241d]">
+      <img src="/img/120.png" class="h-140 hidden max xl:block" alt="">
+      <div class="bg-[url(img/122.png)] h-170 bg-contain bg-no-repeat mt-7">
+        <img src="/img/123.png" class="h-110 mt-40" alt="">
+      </div>
+      <div>
+        <img src="/img/shape.png" alt="">
+        <h4 class="text-5xl font-semibold">Brew the best coffee at<br>home</h4>
+        <p class="py-10 text-lg">Our coffee bar uses only Ethiopian coffee. All <br>commercially produced coffee originates from Ethiopia. <br>We love Ethiopia for providing the world with coffee to <br>grow, and we continue to love the flavor of that country's <br>coffee. The fruity acidity of this single origin coffee is <br>balanced by its sweet honey notes, creating soft, light <br>notes with a light character.</p>
+        <button class="transition duration-700 hover:bg-[#2b241d] bg-[#d74545] h-13 w-40 text-white">LEARN MORE</button>
+      </div>
+      <img src="/img/121.png" class="h-90 hidden max xl:block" alt="">
+    </div>
+    <div class="bg-[url(img/119.png)] max xl:h-165 bg-cover">
+      <div class="max xl:mx-50 max xl:py-20">
+        <img src="/img/shape.png" alt="">
+        <h4 class="text-5xl font-semibold">Find your perfect <br>coffee</h4>
+        <p class="py-10 text-lg">Our coffee bar uses only Ethiopian coffee. All <br>commercially produced coffee originates from Ethiopia. <br>The fruity acidity of this single origin coffee is balanced <br>by its sweet honey notes, creating soft, light notes with a <br>light character.</p>
+        <button class="transition duration-700 hover:bg-[#2b241d] bg-[#d74545] h-13 w-40 text-white">GO TO SHOP</button>
+      </div>
+    </div>
+    <footer class="bg-[#030619] max xl:h-100 bg-[url(img/125.png)] bg-cover bg-bottom text-white">
+      <div class="flex flex-wrap justify-evenly items-center py-20">
+       <div>
+        <h4 class="text-4xl font-semibold">Coffo</h4>
+        <p class="py-3">There are people who can't start their day without having <br>a freshly brewed cup of coffee and we understand them.</p>
+       </div>
+        <div>
+          <h4 class="text-xl font-medium pt-15">Contact Us</h4>
+          <h4 class="py-5">555 Arabica Springs Rd, Crawford, TN 38554</h4>
+          <h4>Call Us: 800.275.8777</h4>
+          <h4 class="py-5">coffo@company.com</h4>
+        </div>
+        <div>
+          <h4 class="text-xl font-medium">Subscribe to Newsletter</h4>
+          <input type="email" placeholder="Your Email Address" class="px-5 bg-white text-gray-900 my-5 h-12 w-50">
+          <button class="text-white bg-[#d74545] my-5 h-12 w-30">Subscribe</button>
+          <h4>Sign up with your email address to receive news and updates</h4>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
