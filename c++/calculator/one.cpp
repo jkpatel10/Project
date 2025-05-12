@@ -21,10 +21,10 @@ void division(int num1,int num2){
     cout << "Division of " << num1 << " and " << num2 << " is : " << sum << endl;
 };
 
-// void modulus(int num1,int num2){
-//     int sum = num1 % num2 ;
-//     cout << "Modulus of " << num1 << " and " << num2 << " is : " << sum << endl;
-// };
+void modulus(int num1,int num2){
+    int sum = num1 % num2 ;
+    cout << "Modulus of " << num1 << " and " << num2 << " is : " << sum << endl;
+};
 
 void calculator(){
    
@@ -70,9 +70,9 @@ void calculator(){
                 division(num1,num2);
                 break;
 
-            // case 5:
-            //     modulus(num1,num2);
-            //     break;
+            case 5:
+                modulus(num1,num2);
+                break;
 
             default:
                 cout << "Invalid choice!" << endl;
